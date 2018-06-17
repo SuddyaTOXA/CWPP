@@ -1,0 +1,86 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*html,body                       { width:100%; height:100%; }*/
+/*body                            { padding:0; margin:0; }*/
+    /*-webkit-font-smoothing: antialiased;*/
+    /*-moz-osx-font-smoothing: grayscale; }*/
+/*div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {*/
+    /*padding:0;*/
+    /*margin:0;*/
+    /*outline:none;*/
+    /*list-style:none;*/
+/*}*/
+/*select, input, textarea        { font-size:14px; vertical-align:middle; }*/
+/*textarea                       { vertical-align:top; }*/
+/*:focus                         { outline:none; }*/
+/*input[type=submit]             { cursor:pointer; }*/
+/*img, fieldset                  { border:0; }*/
+/*table                          { border-collapse:collapse; border-spacing:0; }*/
+/*a:link, a:visited              { font:14px "Open Sans", Arial, sans-serif; color:#000; text-decoration:underline; }*/
+/*a:hover                        { text-decoration:none; }*/
+
+/** {*/
+
+/*}*/
+
+/*a:hover,*/
+/*.btn:hover,*/
+/*input[type="submit"]:hover,*/
+/*button:hover {*/
+    /*opacity: 0.8;*/
+/*}*/
+
+/*.input-style::-webkit-input-placeholder { color: #4f6370; }*/
+/*.input-style::-moz-placeholder { color: #4f6370; }*/
+/*.input-style:-ms-input-placeholder { color: #4f6370; }*/
+/*.input-style:-moz-placeholder { color: #4f6370; }*/
+
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; }
+
+[class^="cwppartner-"],
+[class^="cwppartner-"] * {
+    padding:0;
+    margin:0;
+    font: 400 16px/1.45 "Proximanova", Arial, sans-serif;
+    color:  #505050;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    [class^="cwppartner-"] a:link, [class^="cwppartner-"] a:visited {
+        font-family: "Proximanova", Arial, sans-serif;
+        color: #505050;
+        text-decoration:none;
+    }
+    [class^="cwppartner-"] a:hover {
+        text-decoration:underline;
+    }
+
+    [class^="cwppartner-"] a,
+    [class^="cwppartner-"] .btn {
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+    }
+    [class^="cwppartner-"] img {
+        border: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+    [class^="cwppartner-"] ul,
+    [class^="cwppartner-"] ol,
+    [class^="cwppartner-"] li {
+        /*padding:0;*/
+        /*margin:0;*/
+        list-style:none;
+    }
+

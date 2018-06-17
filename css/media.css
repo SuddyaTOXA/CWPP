@@ -1,0 +1,145 @@
+@media all and (max-width: 1366px) {
+    .cwppartner-showroom-list > li {
+        width: 24%;
+        width: -webkit-calc(25% - 4px);
+        width: calc(25% - 4px);
+    }
+    .cwppartner-section-contact:after {
+        left: 36.2%;
+    }
+        .cwppartner-showroom-left-box {
+            width: 35.6%;
+            /*465px*/
+        }
+        .cwppartner-showroom-right-box {
+            width: 64.4%;
+        }
+            .cwppartner-showroom-right-box .cwppartner-box-title {
+                margin-bottom: 27px;
+            }
+            .cwppartner-all-people-list {
+                max-width: 340px;
+                margin: 0;
+            }
+                .cwppartner-all-people-list > li {
+                    width: 100%;
+                    padding: 0;
+                }
+    .cwppartner-form {
+        max-width: 428px;
+    }
+    .cwppartner-input-style {
+        min-height: 48px;
+        font-size: 14px;
+        padding: 23px 16px 7px;
+    }
+    .cwppartner-label-effect ~ label {
+        left: 16px;
+        top: 17px;
+        font-size: 14px;
+    }
+    .cwppartner-label-effect:focus ~ label,
+    .has-content.cwppartner-label-effect ~ label {
+        font-size: 11px;
+    }
+    .cwppartnerform-list > li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+        .cwppartner-form .cwppartner-select-wrap,
+        .cwppartner-form .cwppartner-input-style {
+            max-width: 363px;
+        }
+        .cwppartner-form .cwppartner-select-wrap:before {
+            width: 10px;
+            height: 10px;
+            top: 15px;
+            right: 22px;
+        }
+        .cwppartner-form .cwppartner-select-wrap.open:before {
+            top: 20px;
+        }
+        .cwppartner-form .cwppartner-select-wrap:after {
+            height: 46px;
+        }
+            .cwppartner-form .cwppartner-select {
+                min-height: 48px;
+                padding-left: 16px;
+                font-size: 14px;
+            }
+            .cwppartner-form .cwppartner-select option {
+                font-size: 14px;
+            }
+        .cwppartner-form textarea.cwppartner-input-style {
+            height: 128px;
+            margin-top: 14px;
+            font-size: 14px;
+        }
+    .cwppartner-form-btn-box {
+        margin-top: 18px;
+    }
+    a.cwppartner-btn,
+    .cwppartner-btn {
+        min-width: 178px;
+        font-size: 17px;
+        line-height: 1;
+        padding: 19px 23px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .cwppartner-showroom-list > li {
+        width: 32%;
+        width: -webkit-calc(33.33% - 4px);
+        width: calc(33.33% - 4px);
+    }
+}
+
+@media all and (max-width: 767px) {
+    .cwppartner-container {
+        padding: 0 15px;
+    }
+    .cwppartner-select {
+        text-transform: initial;
+    }
+    .cwppartner-section-showroom .cwppartner-showroom-left-box,
+    .cwppartner-section-showroom .cwppartner-showroom-right-box {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+    .cwppartner-section-showroom .cwppartner-showroom-left-box {
+        padding-left: 5px;
+    }
+    .cwppartner-section-showroom .cwppartner-showroom-right-box {
+        margin-bottom: 19px;
+    }
+        .cwppartner-section-showroom .cwppartner-showroom-right-box .cwppartner-filter-title {
+            display: none;
+        }
+        .cwppartner-section-title {
+            margin-bottom: 11px;
+            font-size: 25px;
+        }
+        .cwppartner-select-wrap {
+            max-width: 100%;
+        }
+    .cwppartner-showroom-list {
+        margin: 0 -5px -44px;
+    }
+        .cwppartner-showroom-list > li {
+            width: 49%;
+            width: -webkit-calc(50% - 4px);
+            width: calc(50% - 4px);
+            padding: 0 5px;
+            margin-bottom: 38px;
+        }
+            .cwppartner-showroom-img-wrap {
+                margin-bottom: 5px;
+            }
+            .cwppartner-showroom-title {
+                font-size: 15px;
+                word-spacing: 0;
+            }
+}
