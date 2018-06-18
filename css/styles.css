@@ -321,16 +321,16 @@ a.cwppartner-btn:focus,
     .cwppartner-section-contact .cwppartner-container {
         overflow: hidden;
     }
-        .cwppartner-showroom-left-box,
-        .cwppartner-showroom-right-box {
+        .cwppartner-contact-left-box,
+        .cwppartner-contact-right-box {
             float: left;
         }
-        .cwppartner-showroom-left-box {
+        .cwppartner-contact-left-box {
             width: 55%;
             padding-right: 90px;
             /*background-color: green;*/
         }
-        .cwppartner-showroom-right-box {
+        .cwppartner-contact-right-box {
             width: 44.8%;
             padding-left: 90px;
         }
@@ -464,6 +464,10 @@ a.cwppartner-btn:focus,
                         .cwppartner-form .cwppartner-select-wrap.open:before {
                             top: 26px;
                         }
+                        .cwppartner-form .cwppartner-select-wrap:after {
+                            height: 55px;
+                            width: 55px;
+                        }
                             .cwppartner-form .cwppartner-select {
                                 min-height: 57px;
                                 padding-left: 20px;
@@ -479,6 +483,9 @@ a.cwppartner-btn:focus,
                 .cwppartner-form-btn-box {
                     margin-top: 22px;
                 }
+
+
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LANDING--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

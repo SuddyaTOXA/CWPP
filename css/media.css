@@ -5,16 +5,17 @@
         width: calc(25% - 4px);
     }
     .cwppartner-section-contact:after {
-        left: 36.2%;
+        left: 465px;
     }
-        .cwppartner-showroom-left-box {
-            width: 35.6%;
-            /*465px*/
+        .cwppartner-contact-left-box {
+            width: 100%;
+            max-width: 465px;
         }
-        .cwppartner-showroom-right-box {
-            width: 64.4%;
+        .cwppartner-contact-right-box {
+            width: -webkit-calc(100% - 465px);
+            width: calc(100% - 465px);
         }
-            .cwppartner-showroom-right-box .cwppartner-box-title {
+            .cwppartner-contact-right-box .cwppartner-box-title {
                 margin-bottom: 27px;
             }
             .cwppartner-all-people-list {
@@ -60,6 +61,7 @@
         }
         .cwppartner-form .cwppartner-select-wrap:after {
             height: 46px;
+            width: 46px;
         }
             .cwppartner-form .cwppartner-select {
                 min-height: 48px;
@@ -92,6 +94,21 @@
         width: -webkit-calc(33.33% - 4px);
         width: calc(33.33% - 4px);
     }
+    .cwppartner-section-contact:after {
+        left: 50%;
+    }
+        .cwppartner-contact-left-box {
+            width: 50%;
+            max-width: 100%;
+            padding-right: 40px;
+        }
+        .cwppartner-contact-right-box {
+            width: 50%;
+            padding-left: 40px;
+        }
+            .cwppartner-all-people-list {
+                max-width: 100%;
+            }
 }
 
 @media all and (max-width: 767px) {
@@ -141,5 +158,101 @@
             .cwppartner-showroom-title {
                 font-size: 15px;
                 word-spacing: 0;
+            }
+    .cwppartner-section-contact:after {
+        content: none;
+    }
+        .cwppartner-contact-left-box,
+        .cwppartner-contact-right-box {
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+        .cwppartner-contact-left-box {
+            margin-bottom: 60px;
+        }
+            .cwppartner-box-title {
+                font-size: 14px;
+            }
+            .cwppartner-all-people-list {
+                padding-top: 0;
+            }
+                .cwppartner-people-list > li a:after {
+                    right: 6px;
+                }
+                .cwppartner-people-list > li a:hover:after,
+                .cwppartner-people-list > li a:focus:after {
+                    right: 12px;
+                }
+                .cwppartner-people-table {
+                    padding: 14px 40px 13px 0;
+                }
+                    .cwppartner-people-img-cell {
+                        width: 63px;
+                    }
+                        .cwppartner-img-wrap {
+                            width: 46px;
+                            height: 46px;
+                        }
+                        .cwppartner-people-name {
+                            font-size: 17px;
+                        }
+                        .cwppartner-people-position {
+                            font-size: 13px;
+                        }
+            .cwppartner-contact-right-box .cwppartner-box-title {
+                margin-bottom: 14px;
+            }
+    .cwppartnerform-list > li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+        .cwppartner-form {
+            max-width: 100%;
+        }
+            .cwppartner-input-style {
+                min-height: 46px;
+                padding: 20px 15px 5px;
+                font-size: 16px;
+                letter-spacing: -.02em;
+            }
+            .cwppartner-form .cwppartner-select-wrap,
+            .cwppartner-form .cwppartner-input-style {
+                max-width: 100%;
+            }
+            .cwppartner-label-effect ~ label {
+                font-size: 16px;
+                letter-spacing: -.02em;
+            }
+            .cwppartner-label-effect:focus ~ label,
+            .has-content.cwppartner-label-effect ~ label {
+                top: 10px;
+            }
+            .cwppartner-form .cwppartner-select {
+                min-height: 46px;
+                font-size: 16px;
+            }
+            .cwppartner-form .cwppartner-select option {
+                font-size: 16px;
+            }
+            .cwppartner-form .cwppartner-select-wrap:before {
+                right: 16px;
+            }
+            .cwppartner-form .cwppartner-select-wrap:after {
+                height: 44px;
+                width: 44px;
+            }
+            .cwppartner-form textarea.cwppartner-input-style {
+                margin-top: 13px;
+                height: 120px;
+            }
+        .cwppartner-form-btn-box {
+            margin-top: 18px;
+        }
+            a.cwppartner-btn,
+            .cwppartner-btn {
+                min-width: 166px;
+                padding: 17px 23px;
+                font-size: 16px;
             }
 }
