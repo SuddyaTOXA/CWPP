@@ -483,9 +483,177 @@ a.cwppartner-btn:focus,
                 .cwppartner-form-btn-box {
                     margin-top: 22px;
                 }
-
-
-
+.cwppartner-fixed {
+    overflow: hidden;
+}
+    .cwppartner-popup-overlay.show {
+        display: block;
+    }
+    .cwppartner-popup-overlay {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #000000;
+        background-color: rgba(0, 0, 0, .83);
+    }
+        .cwppartner-popup-box {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            max-width: 1362px;
+            max-height: 680px;
+            background-color: #ffffff;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+            a.cwppartner-popup-close-btn,
+            .cwppartner-popup-close-btn {
+                overflow: hidden;
+                position: absolute;
+                right: 22px;
+                top: 29px;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+            }
+            a.cwppartner-popup-close-btn:after,
+            .cwppartner-popup-close-btn:after,
+            a.cwppartner-popup-close-btn:before,
+            .cwppartner-popup-close-btn:before {
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                width: 36px;
+                height: 2px;
+                background-color: #595959;
+                -webkit-transition: 0.35s;
+                -moz-transition: 0.35s;
+                -o-transition: 0.35s;
+                transition: 0.35s;
+            }
+            a.cwppartner-popup-close-btn:after,
+            .cwppartner-popup-close-btn:after {
+                 -webkit-transform: translate(-50%, -50%) rotate(45deg);
+                -moz-transform: translate(-50%, -50%) rotate(45deg);
+                -ms-transform: translate(-50%, -50%) rotate(45deg);
+                -o-transform: translate(-50%, -50%) rotate(45deg);
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            a.cwppartner-popup-close-btn:before,
+            .cwppartner-popup-close-btn:before {
+                 -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+                -moz-transform: translate(-50%, -50%) rotate(-45deg);
+                -ms-transform: translate(-50%, -50%) rotate(-45deg);
+                -o-transform: translate(-50%, -50%) rotate(-45deg);
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            a.cwppartner-popup-close-btn:hover:after,
+            .cwppartner-popup-close-btn:hover:after,
+            a.cwppartner-popup-close-btn:focus:after,
+            .cwppartner-popup-close-btn:focus:after,
+            a.cwppartner-popup-close-btn:hover:before,
+            .cwppartner-popup-close-btn:hover:before,
+            a.cwppartner-popup-close-btn:focus:before,
+            .cwppartner-popup-close-btn:focus:before {
+                background-color: #000000;
+            }
+            .cwppartner-popup-inner-box {
+                overflow: hidden;
+            }
+                .cwppartner-popup-left-box,
+                .cwppartner-popup-right-box {
+                    float: left;
+                    width: 50%;
+                    max-height: 680px;
+                }
+                .cwppartner-popup-right-box {
+                    padding: 70px 80px 0;
+                    /*overflow-x: auto;*/
+                }
+                    .cwppartner-popup-img-wrap {
+                        overflow: hidden;
+                        position: relative;
+                        width: 100%;
+                        padding-bottom: 100%;
+                        background-color: #D6D6D6;
+                    }
+                        .cwppartner-popup-img-wrap img {
+                            position: absolute;
+                            display: block;
+                            width: auto;
+                            height: auto;
+                            min-width: 100%;
+                            min-height: 100%;
+                            /*max-height: 100%;*/
+                            max-width: 100%;
+                            top: -9999px;
+                            left: -9999px;
+                            right: -9999px;
+                            bottom: -9999px;
+                            margin: auto;
+                        }
+                    .cwppartner-popup-content-box {
+                        /*padding: 80px 40px 0;*/
+                        /*overflow-y: auto;*/
+                        /*overflow: scroll;*/
+                    }
+                        .cwppartner-popup-header-box {
+                            margin-bottom: 45px;
+                        }
+                            .cwppartner-popup-title {
+                                margin-bottom: -2px;
+                                font-size: 36px;
+                                font-weight: 700;
+                                line-height: 1.2;
+                                letter-spacing: .03em;
+                                text-transform: uppercase;
+                            }
+                            .cwppartner-popup-person-position {
+                                margin-bottom: 10px;
+                                font-size: 18px;
+                                line-height: 1.2;
+                                letter-spacing: -.01em;
+                                word-spacing: .02em;
+                            }
+                        .cwppartner-popup-person-info-box {
+                            margin-left: 2px;
+                            margin-bottom: 20px;
+                        }
+                            .cwppartner-popup-person-info-label {
+                                display: block;
+                                margin-bottom: 5px;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                letter-spacing: .04em;
+                                text-transform: uppercase;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a {
+                                font-size: 18px;
+                                line-height: 1.2;
+                                letter-spacing: -.02em;
+                                text-decoration: underline;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a:hover,
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a:focus {
+                                text-decoration: none;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a[href^="tel:"] {
+                                text-decoration: none;
+                                cursor: default;
+                            }
+                            .cwppartner-popup-content {}
+                            .cwppartner-popup-content > * {}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LANDING--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
