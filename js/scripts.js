@@ -1,13 +1,6 @@
 jQuery(document).ready(function($) {
-    // the blocking of links default behavior
-    function prevent(){
-        $('.prevent, a[href="/broken"]').on('click', function(event){
-            event.preventDefault();
-        });
-    }
-    prevent();
 
-    //for input
+    // for input label effect
     if ($(".cwppartner-input-style").length) {
         var input = $(".cwppartner-input-style");
 
@@ -20,7 +13,7 @@ jQuery(document).ready(function($) {
         });
     }
 
-    //for form select
+    // for form select
     if ($('.cwppartner-form .cwppartner-select').length) {
         $('.cwppartner-form .cwppartner-select').change(function () {
             var selectVal = $(this).find('option:selected').val();
@@ -36,4 +29,5 @@ jQuery(document).ready(function($) {
             }
         })
     }
+
 });
