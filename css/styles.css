@@ -271,7 +271,6 @@ a.cwppartner-btn:focus,
                             min-width: 100%;
                             min-height: 100%;
                             max-width: 100%;
-                            max-height: 100%;
                             top: -9999px;
                             left: -9999px;
                             right: -9999px;
@@ -286,6 +285,10 @@ a.cwppartner-btn:focus,
                             -moz-transition: 0.35s;
                             -o-transition: 0.35s;
                             transition: 0.35s;
+                        }
+                        .cwppartner-showroom-img-wrap.wide img {
+                            max-height: 100%;
+                            max-width: none;
                         }
                     .cwppartner-showroom-title {
                         letter-spacing: -.03em;
@@ -417,11 +420,16 @@ a.cwppartner-btn:focus,
                                                 height: auto;
                                                 min-width: 100%;
                                                 min-height: 100%;
+                                                max-width: 100%;
                                                 top: -9999px;
                                                 left: -9999px;
                                                 right: -9999px;
                                                 bottom: -9999px;
                                                 margin: auto;
+                                            }
+                                            .cwppartner-img-wrap.wide img {
+                                                max-height: 100%;
+                                                max-width: none;
                                             }
                                     .cwppartner-people-info-cell {
                                         display: table-cell;
@@ -619,12 +627,16 @@ a.cwppartner-btn:focus,
                             height: auto;
                             min-width: 100%;
                             min-height: 100%;
-                            max-height: 100%;
+                            max-width: 100%;
                             top: -9999px;
                             left: -9999px;
                             right: -9999px;
                             bottom: -9999px;
                             margin: auto;
+                        }
+                        .cwppartner-popup-img-wrap.wide img {
+                            max-height: 100%;
+                            max-width: none;
                         }
                     .cwppartner-popup-content-box {
                         overflow-y: auto;
