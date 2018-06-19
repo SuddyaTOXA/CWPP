@@ -12,6 +12,7 @@
             max-width: 465px;
         }
         .cwppartner-contact-right-box {
+            width: 65%;
             width: -webkit-calc(100% - 465px);
             width: calc(100% - 465px);
         }
@@ -61,12 +62,14 @@
         }
         .cwppartner-form .cwppartner-select-wrap:after {
             height: 46px;
-            width: 46px;
+            width: 50px;
         }
             .cwppartner-form .cwppartner-select {
                 min-height: 48px;
                 padding-left: 16px;
                 font-size: 14px;
+                padding-top: 12px;
+                padding-bottom: 12px;
             }
             .cwppartner-form .cwppartner-select option {
                 font-size: 14px;
@@ -94,6 +97,7 @@
         margin-right: 20px;
     }
     .cwppartner-landing-slider {
+        width: 80%;
         width: -webkit-calc(100% - 275px);
         width: calc(100% - 275px);
     }
@@ -128,6 +132,15 @@
     }
     .cwppartner-handcrafted-box {
         font-size: 100px;
+    }
+    .cwppartner-section-landing .cwppartner-container {
+        padding: 0 20px;
+    }
+    .cwppartner-time-text {
+        padding-right: 40px;
+    }
+    .cwppartner-time-title + .cwppartner-time-text {
+        padding-right: 0;
     }
 }
 
@@ -233,6 +246,13 @@
         bottom: -220px;
         left: 50%;
     }
+    .cwppartner-time-text {
+        padding-right: 40px;
+    }
+    .cwppartner-time-title + .cwppartner-time-text {
+        padding-right: 0;
+    }
+
 }
 
 @media all and (max-width: 768px) {
@@ -267,6 +287,9 @@
             max-width: 100%;
         }
     .cwppartner-showroom-list {
+        width: 100%;
+        width: -webkit-calc(100% + 14px);
+        width: calc(100% + 14px);
         margin: 0 -5px -44px;
     }
         .cwppartner-showroom-list > li {
@@ -355,6 +378,8 @@
             .cwppartner-form .cwppartner-select {
                 min-height: 46px;
                 font-size: 16px;
+                padding-top: 11px;
+                padding-bottom: 11px;
             }
             .cwppartner-form .cwppartner-select option {
                 font-size: 16px;
@@ -364,7 +389,7 @@
             }
             .cwppartner-form .cwppartner-select-wrap:after {
                 height: 44px;
-                width: 44px;
+                width: 50px;
             }
             .cwppartner-form textarea.cwppartner-input-style {
                 margin-top: 13px;
@@ -382,6 +407,7 @@
     .cwppartner-popup-box {
         max-width: initial;
         max-height: 100%;
+        height: 100%;
         overflow-y: scroll;
         padding: 0;
     }
@@ -488,9 +514,18 @@
             .cwppartner-popup-content blockquote {
                 max-width: 90%;
             }
+        .cwppartner-popup-box .cwppartner-popup-person-info-box a:after {
+            content: none;
+        }
+    .cwppartner-section-landing {
+        padding: 0;
+    }
     .cwppartner-section-landing .cwppartner-container {
         padding: 0;
     }
+        .cwppartner-landing-slider {
+            padding-top: 0;
+        }
         .cwppartner-landing-wrap,
         .cwppartner-landing-sidebar,
         .cwppartner-landing-slider {
@@ -504,6 +539,7 @@
             }
         .cwppartner-times-list {
             display: block;
+            margin-bottom: 0;
         }
             .cwppartner-times-list > li {
                 display: block;
@@ -537,8 +573,8 @@
                 width: 60px;
             }
             .cwppartner-slider-arrow:after {
-                width: 18px;
-                height: 30px;
+                width: 26px;
+                height: 44px;
             }
     .cwppartner-handcrafted-box {
         display: none;
