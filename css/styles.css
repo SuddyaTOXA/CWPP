@@ -333,7 +333,6 @@ a.cwppartner-btn:focus,
         .cwppartner-contact-left-box {
             width: 55%;
             padding-right: 90px;
-            /*background-color: green;*/
         }
         .cwppartner-contact-right-box {
             width: 44.8%;
@@ -458,7 +457,6 @@ a.cwppartner-btn:focus,
                                         }
             .cwppartner-form {
                 max-width: 503px;
-                /*margin: 0 auto;*/
             }
                 .cwppartnerform-list {}
                     .cwppartnerform-list > li:not(:last-child) {
@@ -523,7 +521,6 @@ a.cwppartner-btn:focus,
             left: 50%;
             top: 50%;
             width: 100%;
-            /*height: 720px;*/
             max-width: 1402px;
             max-height: 100%;
             padding: 20px;
@@ -610,15 +607,11 @@ a.cwppartner-btn:focus,
                 .cwppartner-popup-left-box,
                 .cwppartner-popup-right-box {
                     display: table-cell;
-                    /*float: left;*/
                     width: 50%;
                     vertical-align: top;
-                    /*max-height: 680px;*/
                 }
                 .cwppartner-popup-right-box {
                     position: relative;
-                    /*padding: 70px 25px 0 80px;*/
-                    /*overflow-x: auto;*/
                 }
                     .without-image .cwppartner-popup-left-box {
                         display: none;
@@ -630,38 +623,18 @@ a.cwppartner-btn:focus,
                         padding: 70px 25px 0 80px;
                     }
                     .cwppartner-popup-img-wrap {
-                        /*overflow: hidden;*/
                         position: relative;
                         width: 100%;
-                        /*padding-bottom: 100%;*/
                         background-color: #D6D6D6;
                     }
                         .cwppartner-popup-img-wrap img {
                             display: block;
                             max-width: 100%;
                             height: auto;
-                            /*position: absolute;*/
-                            /*z-index: 10;*/
-                            /*display: block;*/
-                            /*width: auto;*/
-                            /*height: auto;*/
-                            /*min-width: 100%;*/
-                            /*min-height: 100%;*/
-                            /*max-width: 100%;*/
-                            /*top: -9999px;*/
-                            /*left: -9999px;*/
-                            /*right: -9999px;*/
-                            /*bottom: -9999px;*/
-                            /*margin: auto;*/
                         }
-                        /*.cwppartner-popup-img-wrap.wide img {*/
-                            /*max-height: 100%;*/
-                            /*max-width: none;*/
-                        /*}*/
                     .cwppartner-popup-content-box {
                         position: absolute;
                         overflow-y: auto;
-                        /*max-height: 540px;*/
                         height: 90%;
                         height: -webkit-calc(100% - 70px);
                         height: calc(100% - 70px);
@@ -669,7 +642,6 @@ a.cwppartner-btn:focus,
                         left: 80px;
                         right: 25px;
                         bottom: 0;
-                        /*padding: 25px 50px 80px 0;*/
                         padding-right: 50px;
                         padding-bottom: 80px;
                     }
@@ -799,7 +771,6 @@ a.cwppartner-btn:focus,
                             }
                             .cwppartner-popup-content ol {
                                 counter-reset: myCounter;
-                                /*margin-bottom: 36px;*/
                             }
                             .cwppartner-popup-content ol > li {
                                 position: relative;
@@ -975,9 +946,7 @@ a.cwppartner-btn:focus,
                             right: 36px;
                             width: 32px;
                         }
-                .cwppartner-times-notes {
-                    /*padding: 35px 54px 46px 46px;*/
-                }
+                .cwppartner-times-notes {}
                 .cwppartner-times-notes > * {
                     font-size: 14px;
                 }
