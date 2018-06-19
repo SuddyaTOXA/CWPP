@@ -89,6 +89,46 @@
     .cwppartner-popup-img-wrap {
         padding-bottom: 140%;
     }
+    .cwppartner-landing-sidebar {
+        width: 255px;
+        margin-right: 20px;
+    }
+    .cwppartner-landing-slider {
+        width: -webkit-calc(100% - 275px);
+        width: calc(100% - 275px);
+    }
+    .cwppartner-landing-sidebar .cwppartner-box-title {
+        padding: 23px 80px 0 34px;
+        font-size: 10px;
+    }
+    .cwppartner-time-title {
+        max-width: 135px;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .cwppartner-time-text {
+        font-size: 12px;
+    }
+    .cwppartner-times-list > li {
+        padding: 29px 40px 29px 34px;
+    }
+    .cwppartner-date-icon {
+        width: 22px;
+        top: 31px;
+        right: 28px;
+    }
+    .cwppartner-times-notes * {
+        font-size: 12px;
+    }
+    .cwppartner-times-notes {
+        /*padding: 22px 32px 26px 32px;*/
+    }
+    .cwppartner-times-notes > *:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .cwppartner-handcrafted-box {
+        font-size: 100px;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -127,9 +167,75 @@
     .cwppartner-popup-content-box {
         padding-right: 80px;
     }
+    .cwppartner-landing-wrap {
+        display: table;
+        width: 100%;
+    }
+    .cwppartner-landing-sidebar,
+    .cwppartner-landing-slider {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    .cwppartner-landing-sidebar .cwppartner-box-title {
+        margin-bottom: 2px;
+        padding-top: 19px;
+        padding-left: 28px;
+    }
+    .cwppartner-landing-sidebar {
+        display: table-header-group;
+        /*padding-bottom: 20px;*/
+    }
+    .cwppartner-landing-slider {
+        display: table-cell;
+        padding-top: 20px;
+    }
+    .cwppartner-times-list {
+        margin-top: 0;
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: 20px;
+    }
+        .cwppartner-times-list > li {
+            display: table-cell;
+            padding: 24px 28px 10px 28px;
+            border-bottom: none;
+            border-right: 1px solid #e1e1e1;
+        }
+        .cwppartner-times-list > li:last-child {
+            border: none;
+        }
+            .cwppartner-time-title {
+                max-width: 110px;
+                margin-bottom: 2px;
+                font-size: 26px;
+            }
+            .cwppartner-landing-sidebar {
+                right: 10px;
+            }
+            .cwppartner-times-notes {
+                margin-top: -15px;
+            }
+    .cwppartner-slider-arrow {
+        width: 70px;
+    }
+        .cwppartner-slider-arrow:after {
+            width: 35px;
+            height: 59px;
+        }
+        .cwppartner-date-icon {
+            right: 37px;
+            top: 24px;
+            width: 19px;
+        }
+    .cwppartner-handcrafted-box {
+        bottom: -220px;
+        left: 50%;
+    }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
     .cwppartner-container {
         padding: 0 15px;
     }
@@ -382,4 +488,59 @@
             .cwppartner-popup-content blockquote {
                 max-width: 90%;
             }
+    .cwppartner-section-landing .cwppartner-container {
+        padding: 0;
+    }
+        .cwppartner-landing-wrap,
+        .cwppartner-landing-sidebar,
+        .cwppartner-landing-slider {
+            display: block;
+        }
+            .cwppartner-slide img {
+                display: none;
+            }
+            .cwppartner-slide .cwppartner-mobile {
+                display: inline-block;
+            }
+        .cwppartner-times-list {
+            display: block;
+        }
+            .cwppartner-times-list > li {
+                display: block;
+            }
+                .cwppartner-landing-sidebar .cwppartner-box-title {
+                    font-size: 14px;
+                }
+                .cwppartner-time-title {
+                    margin-bottom: 10px;
+                    font-size: 42px;
+                }
+                .cwppartner-times-notes *,
+                .cwppartner-time-text {
+                    font-size: 16px;
+                }
+            .cwppartner-landing-sidebar .cwppartner-box-title {
+                padding-top: 32px;
+                padding-left: 46px;
+            }
+            .cwppartner-date-icon {
+                top: 36px;
+                right: 35px;
+                width: 32px;
+            }
+            .cwppartner-times-list > li {
+                padding: 36px 45px 36px 45px;
+                border: none;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            .cwppartner-slider-arrow {
+                width: 60px;
+            }
+            .cwppartner-slider-arrow:after {
+                width: 18px;
+                height: 30px;
+            }
+    .cwppartner-handcrafted-box {
+        display: none;
+    }
 }
