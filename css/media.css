@@ -524,9 +524,12 @@
                 padding-left: 46px;
             }
             .cwppartner-date-icon {
-                top: 36px;
+                top: 30px;
                 right: 35px;
                 width: 32px;
+            }
+            .cwppartner-time-title ~ .cwppartner-date-icon {
+                top: 36px;
             }
             .cwppartner-times-list > li {
                 padding: 36px 45px 36px 45px;

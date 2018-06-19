@@ -937,6 +937,7 @@ a.cwppartner-btn:focus,
             max-width: 600px;
             font: 120px/0.9 "BodoniBT-Book", Arial, sans-serif;
             color: #313131;
+            color: rgba(49, 49, 49, 0.75);
             text-align: center;
             -webkit-transform: translateX(-50%);
             -moz-transform: translateX(-50%);
