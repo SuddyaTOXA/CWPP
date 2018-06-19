@@ -86,6 +86,9 @@
         line-height: 1;
         padding: 19px 23px;
     }
+    .cwppartner-popup-img-wrap {
+        padding-bottom: 140%;
+    }
 }
 
 @media all and (max-width: 1024px) {
@@ -109,6 +112,21 @@
             .cwppartner-all-people-list {
                 max-width: 100%;
             }
+    .cwppartner-popup-img-wrap {
+        padding-bottom: 190%;
+    }
+    .cwppartner-popup-right-box {
+        padding-left: 40px;
+    }
+    .cwppartner-popup-content-box {
+        padding-right: 25px;
+    }
+    .without-image .cwppartner-popup-right-box {
+        padding-left: 80px;
+    }
+    .cwppartner-popup-content-box {
+        padding-right: 80px;
+    }
 }
 
 @media all and (max-width: 767px) {
@@ -254,5 +272,114 @@
                 min-width: 166px;
                 padding: 17px 23px;
                 font-size: 16px;
+            }
+    .cwppartner-popup-box {
+        max-width: initial;
+        max-height: 100%;
+        overflow-y: scroll;
+        padding: 0;
+    }
+        a.cwppartner-popup-close-btn,
+        .cwppartner-popup-close-btn {
+            top: 10px;
+            right: 10px;
+            width: 36px;
+            height: 36px;
+            background-color: #000000;
+        }
+        a.cwppartner-popup-close-btn:after,
+        .cwppartner-popup-close-btn:after,
+        a.cwppartner-popup-close-btn:before,
+        .cwppartner-popup-close-btn:before {
+            width: 22px;
+            background-color: #505050;
+        }
+        a.cwppartner-popup-close-btn:hover:after,
+        .cwppartner-popup-close-btn:hover:after,
+        a.cwppartner-popup-close-btn:focus:after,
+        .cwppartner-popup-close-btn:focus:after,
+        a.cwppartner-popup-close-btn:hover:before,
+        .cwppartner-popup-close-btn:hover:before,
+        a.cwppartner-popup-close-btn:focus:before,
+        .cwppartner-popup-close-btn:focus:before {
+            background-color: #ffffff;
+        }
+        .without-image a.cwppartner-popup-close-btn,
+        .without-image .cwppartner-popup-close-btn {
+            background-color: transparent;
+        }
+        .without-image a.cwppartner-popup-close-btn:after,
+        .without-image .cwppartner-popup-close-btn:after,
+        .without-image a.cwppartner-popup-close-btn:before,
+        .without-image .cwppartner-popup-close-btn:before {
+            background-color: #595959;
+        }
+        .without-image a.cwppartner-popup-close-btn:hover:after,
+        .without-image .cwppartner-popup-close-btn:hover:after,
+        .without-image a.cwppartner-popup-close-btn:focus:after,
+        .without-image .cwppartner-popup-close-btn:focus:after,
+        .without-image a.cwppartner-popup-close-btn:hover:before,
+        .without-image .cwppartner-popup-close-btn:hover:before,
+        .without-image a.cwppartner-popup-close-btn:focus:before,
+        .without-image .cwppartner-popup-close-btn:focus:before {
+            background-color: #000000;
+        }
+        .cwppartner-popup-inner-box {
+            overflow: initial;
+            max-height: initial;
+        }
+        .cwppartner-popup-left-box,
+        .cwppartner-popup-right-box {
+            float: none;
+            width: 100%;
+            max-height: initial;
+        }
+        .without-image .cwppartner-popup-right-box {
+            padding-top: 80px;
+            padding-left: 20px;
+        }
+        .cwppartner-popup-right-box {
+            padding: 28px 20px 20px 20px;
+        }
+            .cwppartner-popup-img-wrap {
+                padding-bottom: 100%;
+            }
+            .cwppartner-popup-content-box {
+                max-height: initial;
+                padding-top: 24px;
+                padding-right: 0;
+            }
+            .cwppartner-popup-title {
+                margin-bottom: -7px;
+                font-size: 24px;
+            }
+            .cwppartner-popup-person-position {
+                margin-left: 1px;
+                font-size: 14px;
+            }
+            .cwppartner-popup-person-info-box {
+                margin-bottom: 19px;
+            }
+                .cwppartner-popup-person-info-label {
+                    margin-bottom: -1px;
+                    font-size: 10px;
+                    letter-spacing: .08em;
+                }
+                .cwppartner-popup-box .cwppartner-popup-person-info-box a {
+                    font-size: 16px;
+                }
+            .cwppartner-popup-person-info-box + .cwppartner-popup-content {
+                margin-top: 35px;
+            }
+            .cwppartner-popup-content {
+                margin-left: 0;
+            }
+            .cwppartner-popup-content * {
+                margin-bottom: 20px;
+                font-size: 16px;
+                line-height: 1.4;
+            }
+            .cwppartner-popup-content blockquote {
+                max-width: 90%;
             }
 }

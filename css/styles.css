@@ -507,21 +507,26 @@ a.cwppartner-btn:focus,
             top: 50%;
             width: 100%;
             height: 100%;
-            max-width: 1362px;
-            max-height: 680px;
-            background-color: #ffffff;
+            max-width: 1402px;
+            max-height: 720px;
+            padding: 20px;
+            background-color: transparent;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+        .without-image .cwppartner-popup-box {
+            max-width: 872px;
+        }
             a.cwppartner-popup-close-btn,
             .cwppartner-popup-close-btn {
                 overflow: hidden;
                 position: absolute;
-                right: 22px;
-                top: 29px;
+                z-index: 20;
+                right: 42px;
+                top: 49px;
                 width: 24px;
                 height: 24px;
                 cursor: pointer;
@@ -570,6 +575,8 @@ a.cwppartner-btn:focus,
             }
             .cwppartner-popup-inner-box {
                 overflow: hidden;
+                max-height: 100%;
+                background-color: #ffffff;
             }
                 .cwppartner-popup-left-box,
                 .cwppartner-popup-right-box {
@@ -578,9 +585,16 @@ a.cwppartner-btn:focus,
                     max-height: 680px;
                 }
                 .cwppartner-popup-right-box {
-                    padding: 70px 80px 0;
+                    padding: 70px 25px 0 80px;
                     /*overflow-x: auto;*/
                 }
+                    .without-image .cwppartner-popup-left-box {
+                        display: none;
+                    }
+                    .without-image .cwppartner-popup-right-box {
+                        float: none;
+                        width: 100%;
+                    }
                     .cwppartner-popup-img-wrap {
                         overflow: hidden;
                         position: relative;
@@ -590,13 +604,13 @@ a.cwppartner-btn:focus,
                     }
                         .cwppartner-popup-img-wrap img {
                             position: absolute;
+                            z-index: 10;
                             display: block;
                             width: auto;
                             height: auto;
                             min-width: 100%;
                             min-height: 100%;
-                            /*max-height: 100%;*/
-                            max-width: 100%;
+                            max-height: 100%;
                             top: -9999px;
                             left: -9999px;
                             right: -9999px;
@@ -604,12 +618,12 @@ a.cwppartner-btn:focus,
                             margin: auto;
                         }
                     .cwppartner-popup-content-box {
-                        /*padding: 80px 40px 0;*/
-                        /*overflow-y: auto;*/
-                        /*overflow: scroll;*/
+                        overflow-y: auto;
+                        max-height: 540px;
+                        padding: 45px 50px 80px 0;
                     }
                         .cwppartner-popup-header-box {
-                            margin-bottom: 45px;
+                            margin-bottom: 0;
                         }
                             .cwppartner-popup-title {
                                 margin-bottom: -2px;
@@ -639,10 +653,31 @@ a.cwppartner-btn:focus,
                                 text-transform: uppercase;
                             }
                             .cwppartner-popup-box .cwppartner-popup-person-info-box a {
+                                position: relative;
                                 font-size: 18px;
                                 line-height: 1.2;
                                 letter-spacing: -.02em;
-                                text-decoration: underline;
+                                text-decoration: none;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a:after {
+                                position: absolute;
+                                content: '';
+                                left: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 1px;
+                                background-color: #505050;
+                                -webkit-transition: 0.35s;
+                                -moz-transition: 0.35s;
+                                -o-transition: 0.35s;
+                                transition: 0.35s;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a[href^="tel:"]:after {
+                                content: none;
+                            }
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a:hover:after,
+                            .cwppartner-popup-box .cwppartner-popup-person-info-box a:focus:after {
+                                opacity: 0;
                             }
                             .cwppartner-popup-box .cwppartner-popup-person-info-box a:hover,
                             .cwppartner-popup-box .cwppartner-popup-person-info-box a:focus {
@@ -652,8 +687,144 @@ a.cwppartner-btn:focus,
                                 text-decoration: none;
                                 cursor: default;
                             }
-                            .cwppartner-popup-content {}
-                            .cwppartner-popup-content > * {}
+                            .cwppartner-popup-person-info-box + .cwppartner-popup-content {
+                                margin-top: 34px;
+                            }
+                            .without-image .cwppartner-popup-content {
+                                max-width: 680px;
+                            }
+                            .cwppartner-popup-content {
+                                margin-left: 1px;
+                            }
+                            .cwppartner-popup-content * {
+                                margin-bottom: 25px;
+                                font-size: 18px;
+                                letter-spacing: -.01em;
+                                word-spacing: -.01em;
+                            }
+                            .cwppartner-popup-content > *:last-child {
+                                margin-bottom: 0;
+                            }
+                            .cwppartner-popup-content h1, .cwppartner-popup-content .h1style,
+                            .cwppartner-popup-content h2, .cwppartner-popup-content .h2style,
+                            .cwppartner-popup-content h3, .cwppartner-popup-content .h3style,
+                            .cwppartner-popup-content h4, .cwppartner-popup-content .h4style,
+                            .cwppartner-popup-content h5, .cwppartner-popup-content .h5style,
+                            .cwppartner-popup-content h6, .cwppartner-popup-content .h6style {
+                                margin-bottom: 7px;
+                                font-size: 34px;
+                                font-weight: 700;
+                                line-height: 1.2;
+                            }
+                            .cwppartner-popup-content h2, .cwppartner-popup-content .h2style { font-size: 32px; }
+                            .cwppartner-popup-content h3, .cwppartner-popup-content .h3style { font-size: 28px; }
+                            .cwppartner-popup-content h4, .cwppartner-popup-content .h4style { font-size: 24px; }
+                            .cwppartner-popup-content h5, .cwppartner-popup-content .h5style { font-size: 20px; }
+                            .cwppartner-popup-content h6, .cwppartner-popup-content .h6style { font-size: 18px; }
+                            .cwppartner-popup-content ul > li {
+                                position: relative;
+                                padding-left: 26px;
+                                margin-bottom: 10px;
+                            }
+                            .cwppartner-popup-content ul > li:before {
+                                position: absolute;
+                                content: '';
+                                width: 4px;
+                                height: 4px;
+                                left: 2px;
+                                top: 11px;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                border-radius: 50%;
+                                border: 1px solid #505050;
+                                background-color: transparent;
+                            }
+                            .cwppartner-popup-content ol {
+                                counter-reset: myCounter;
+                                /*margin-bottom: 36px;*/
+                            }
+                            .cwppartner-popup-content ol > li {
+                                position: relative;
+                                margin-bottom: 10px;
+                                padding-left: 26px;
+                            }
+                            .cwppartner-popup-content ol > li:before {
+                                position: absolute;
+                                counter-increment: myCounter;
+                                content: counter(myCounter) ".";
+                                left: 2px;
+                                top: 0;
+                                font-size: 18px;
+                                color: #505050;
+                            }
+                            .cwppartner-popup-content blockquote {
+                                max-width: 80%;
+                                margin: 0 auto;
+                                padding-left: 10px;
+                                border-left: 2px solid #505050;
+                            }
+                            .cwppartner-popup-content a {
+                                text-decoration: underline;
+                            }
+                            .cwppartner-popup-content a:hover,
+                            .cwppartner-popup-content a:focus {
+                                text-decoration: none;
+                            }
+                            .cwppartner-popup-content img {
+                                display: block;
+                                max-width: 100%;
+                                margin: 0 auto 25px;
+                            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------LANDING--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.cwppartner-section-landing {
+    position: relative;
+    padding: 90px 0;
+}
+.cwppartner-section-landing:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3a3a3a;
+    background-color: rgba(0, 0, 0, .8);
+}
+    .cwppartner-section-landing .cwppartner-container {}
+        .cwppartner-landing-wrap {
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+            .cwppartner-landing-slider {
+                background-color: #ffffff;
+            }
+                .cwppartner-slider-wrapper {
+                    float: right;
+                    width: -webkit-calc(100% - 386px);
+                    width: calc(100% - 386px);
+                }
+                    .cwppartner-slide {}
+                    .cwppartner-slide img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    .cwppartner-slide .cwppartner-mobile {
+                        display: none;
+                    }
+            .cwppartner-landing-sidebar {
+                float: left;
+                width: 350px;
+                margin-right: 36px;
+                background-color: #ffffff;
+            }
+                .cwppartner-box-title {}
+                .cwppartner-times-list {}
+                    .cwppartner-times-list > li {}
+                        .cwppartner-time-title {}
+                        .cwppartner-time-text {}
+                        .cwppartner-date-icon {}
+                .cwppartner-times-notes {}
+                .cwppartner-times-notes p {}

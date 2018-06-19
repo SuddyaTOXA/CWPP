@@ -55,10 +55,10 @@ body                            { padding:0; margin:0; }
     [class^="cwppartner-"] a:link, [class^="cwppartner-"] a:visited {
         font-family: "Proximanova", Arial, sans-serif;
         color: #505050;
-        text-decoration:none;
+        /*text-decoration:none;*/
     }
     [class^="cwppartner-"] a:hover {
-        text-decoration:underline;
+        /*text-decoration:underline;*/
     }
 
     [class^="cwppartner-"] a,
