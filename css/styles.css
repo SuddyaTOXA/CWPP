@@ -714,6 +714,7 @@ a.cwppartner-btn:focus,
                 }
                 .cwppartner-popup-left-box {
                     max-width: 50%;
+                    min-height: 50vh;
                 }
                 [class*="no-flexbox"] .cwppartner-popup-left-box {
                     max-width: 100%;
@@ -1577,6 +1578,7 @@ a.cwppartner-btn:focus,
         width: 100%;
         max-width: 100%;
         max-height: initial;
+        min-height: initial;
     }
     [class*="no-flexbox"] .cwppartner-popup-img-wrap img,
     .cwppartner-popup-img-wrap img {
