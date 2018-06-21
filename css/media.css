@@ -140,6 +140,9 @@
 }
 
 @media all and (max-width: 1024px) {
+    .cwppartner-section-contact .cwppartner-container {
+        padding: 0 20px;
+    }
     .cwppartner-showroom-list > li {
         width: 32%;
         width: -webkit-calc(33.33% - 4px);
@@ -241,7 +244,7 @@
     }
 
 }
-
+/*
 @media all and (min-width: 1366px) and (max-height: 700px) {
     .cwppartner-popup-box {
         height: 600px;
@@ -257,7 +260,9 @@
         height: 380px;
     }
 }
+*/
 @media all and (max-width: 768px) {
+    .cwppartner-section-contact .cwppartner-container,
     .cwppartner-container {
         padding: 0 15px;
     }
